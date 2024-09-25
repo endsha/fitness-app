@@ -13,6 +13,10 @@ const Typo = StyleSheet.create({
     fontSize: 16,
     fontWeight: 'regular',
   },
+  textMediumSemiBold: {
+    fontSize: 16,
+    fontWeight: 'semibold',
+  },
   textMediumBold: {
     fontSize: 16,
     fontWeight: 'bold',

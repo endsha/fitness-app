@@ -24,7 +24,11 @@ export default function MainBottomTabsNavigator(): JSX.Element {
     <Tab.Navigator
       initialRouteName={NavigationScreenName.Home}
       tabBar={(props: BottomTabBarProps) => <MainBottomTabs {...props} />}>
-      <Tab.Screen name={NavigationScreenName.Home} component={Home} />
+      <Tab.Screen
+        name={NavigationScreenName.Home}
+        component={Home}
+        options={{ headerShown: false }}
+      />
       <Tab.Screen name={NavigationScreenName.Map} component={Map} />
       <Tab.Screen
         name={NavigationScreenName.Activities}
@@ -47,7 +51,7 @@ function MainBottomTabs(props: BottomTabBarProps): JSX.Element {
         return (
           <>
             <Ionicons
-              name={isActive ? 'home' : 'home-outline'}
+              name={isActive ? 'grid' : 'grid-outline'}
               size={24}
               color={
                 isActive
